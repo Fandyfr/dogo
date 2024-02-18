@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --latar-main: #FFFFFF;
+    --putih: #FFFFFF;
+    --latar-kedua: #94D4EC;
+    --hover: #40A2E3;
+    --sora: #687EFF;
+    --art: #FFB000;
+    --header: #202020;
+    --hitam: #000000;
+    
+}
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Heading */
+
+.navbar {
+    position: fixed;
+    background: var(--header);
+    color: var(--putih);
+    padding: 15px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 960px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 1.3rem;
+    color: var(--putih);
+    transition: all 0.3s ease;
+}
+
+.brand span {
+    color: var(--sora);
+}
+
+.brand:hover {
+    color: var(--hover);
+}
+
+.nav-links {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: var(--putih);
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: var(--hover);
+}
+
+.nav-links li a.active {
+    color: var(--latar-kedua);
+    font-weight: bold;
+}
+
+/* Setelan Teks & Transcript */
+
+pre {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+}
+
+/* Hal Utama */
+main {
+    flex: 1;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content span {
+    color: var(--sora);
+}
+
+.hero-content a.btn {
+    display: inline-flex;
+    padding-top: 12px;
+}
+
+/* Button More */
+.btn {
+ border: none;
+ color: #fff;
+ background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+ border-radius: 20px;
+ background-size: 100% auto;
+ font-family: inherit;
+ font-size: 17px;
+ padding: 0.6em 1.5em;
+}
+
+.btn:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+/* Fan Art */
+
+.section {
+    padding: 20px; /* Atur padding untuk menjaga jarak konten dari pinggir */
+    background-color: #f9f9f9; /* Warna latar belakang */
+    border-radius: 10px; /* Membuat ujung bagian menjadi melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk mendapatkan kedalaman */
+}
+
+.section h1 {
+    font-size: 24px; /* Atur ukuran teks judul */
+    margin-bottom: 20px; /* Atur jarak antara judul dan galeri */
+    text-align: center; /* Pusatkan judul */
+}
+
+.img-scroll {
+    overflow-x: auto; /* Tambahkan scrollbar horizontal jika konten lebih besar dari lebar */
+    white-space: nowrap; /* Hindari pemisahan baris di dalam galeri */
+}
+
+.image-container {
+    display: inline-block; /* Memastikan galeri berbaris secara horizontal */
+    white-space: nowrap; /* Hindari pemisahan baris di dalam galeri */
+}
+
+.image-wrapper {
+    display: inline-block; /* Membuat setiap gambar dan teks di dalam galeri berbaris secara horizontal */
+    vertical-align: top; /* Memastikan setiap gambar dan teks di dalam galeri berada di atas */
+    margin-right: 20px; /* Atur jarak antara setiap gambar dan teks */
+    text-align: center; /* Pusatkan teks di dalam galeri */
+}
+
+.image-wrapper img {
+    max-width: 100%; /* Mengatur lebar maksimum gambar agar tidak melebihi lebar galeri */
+    height: auto; /* Biarkan tinggi gambar diatur secara otomatis untuk menjaga proporsi */
+}
+
+.image-wrapper h5 {
+    font-size: 16px; /* Atur ukuran teks judul gambar */
+    margin-bottom: 5px; /* Atur jarak antara judul gambar dan teks tambahan */
+}
+
+.image-wrapper p {
+    font-size: 14px; /* Atur ukuran teks tambahan */
+    color: #888; /* Warna teks tambahan */
+}
+
+.navigation {
+    text-align: center; /* Pusatkan tombol navigasi */
+    margin-top: 20px; /* Atur margin atas */
+}
+
+.navigation ul {
+    list-style: none; /* Hilangkan daftar bullet */
+    padding: 0; /* Hapus padding bawaan */
+}
+
+.navigation li {
+    display: inline-block; /* Tampilkan tombol dalam satu baris */
+    margin-right: 10px; /* Atur jarak antara tombol */
+}
+
+.navigation button {
+    background-color: #007bff; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    border: none; /* Hapus border */
+    padding: 8px 16px; /* Atur padding tombol */
+    font-size: 16px; /* Atur ukuran teks */
+    cursor: pointer; /* Ganti kursor saat dihover */
+}
+
+.navigation button:hover {
+    background-color: #0056b3; /* Warna latar belakang saat dihover */
+}
+
+
+
+
+
+
+section {
+    padding: 80px;
+}
+
+#fanart h1 {
+    color: var(--sora);
+}
+
+#fanart h1 span {
+    color: var(--art);
+}
+
+
+
+
+
+/* Footer */
+.footer {
+    width: 100%;
+    background: var(--header);
+    color: var(--putih);
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.footer p {
+    text-align: center;
+}
+
+
+/* Animasi */
+
+@keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }

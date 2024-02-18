@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Website untuk Vtuber Inumaki Sora by FandyFr">
+    <meta name="robots" content="index">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/img/inumakisora.ico" type="image/x-icon">
+    <script src="js/script.js"></script>
+    <title>🐾 Inumaki Sora 🐾</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="inumakisora.html" class="brand">Inumaki Sora</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active" onclick="setActive(this); return false;">Home</a></li>
+                    <li><a href="#fanart" onclick="setActive(this); return false;">Fan Art</a></li>
+                    <li><a href="#about" onclick="setActive(this); return false;">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hal Utama -->
+
+    <main>
+        <div class="section">
+            <section class="hero" id="home">
+                <div class="hero-content">
+                    <img src="assets/img/hi.png" alt="Welcome">
+                    <h1>Selamat datang di Website Inumaki <span>Sora</span></h1>
+                    <p>Halo semuanyaaaa...</p>
+                    <p>Perkenalkan nama ku Inumaki Sora, biasa dipanggil Sora.</p>
+                    <p>Salam kenal yaa...</p>
+                    <a href="#about" class="btn" id="scrollToAbout">About Sora</a>
+                </div>
+            </section>
+        </div>
+        <!-- FanArt -->
+    
+        <section id="fanart" class="section">
+            <h1><span>Fan Art</span> Sora</h1>
+            <div class="img-scroll">
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img src="assets/img/fanart/1.png">
+                        <h5>Image 1</h5>
+                        <p>Art by Sora</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="assets/img/fanart/2.png">
+                        <h5>Image 2</h5>
+                        <p>Art by Sora</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="assets/img/fanart/3.jpg">
+                        <h5>Image 3</h5>
+                        <p>Art by Sora</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="assets/img/fanart/5.png">
+                        <h5>Image 4</h5>
+                        <p>Art by Sora</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="assets/img/fanart/6.jpg">
+                        <h5>Image 5</h5>
+                        <p>Art by Sora</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <nav class="navigation">
+            <ul>
+                <li><button id="prevBtn">Prev</button></li>
+                <li><button id="nextBtn">Next</button></li>
+            </ul>
+        </nav>
+
+        <!-- About -->
+    
+        <section id="about" class="section">
+            <h1>About Sora</h1>
+            <pre>
+                Inumaki Sora adalah seorang anak dari raja dan ratu dari kerajaan Doggo. Tapi dikarenakan terjadinya pemberontakan
+                Sora harus kabur menggunakan gerbang teleportasi, tapi karna terjadi suatu kesalahan Sora malah  teleport ke gerbang
+                utama teleportasi yang menghubungkan dengan dimensi manusia. Dan setelah selesai di dunia manusia, jadilah Sora yang
+                sekarang ini kalian semua lihat.
+            </pre>
+        </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="container-footer">
+            <p>&copy; 2024 Inumaki Sora Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
