@@ -109,7 +109,6 @@ main {
     padding-top: 12px;
 }
 
-/* Button More */
 .btn {
  border: none;
  color: #fff;
@@ -131,76 +130,76 @@ main {
 /* Fan Art */
 
 .section {
-    padding: 20px; /* Atur padding untuk menjaga jarak konten dari pinggir */
-    background-color: #f9f9f9; /* Warna latar belakang */
-    border-radius: 10px; /* Membuat ujung bagian menjadi melengkung */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk mendapatkan kedalaman */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .section h1 {
-    font-size: 24px; /* Atur ukuran teks judul */
-    margin-bottom: 20px; /* Atur jarak antara judul dan galeri */
-    text-align: center; /* Pusatkan judul */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .img-scroll {
-    overflow-x: auto; /* Tambahkan scrollbar horizontal jika konten lebih besar dari lebar */
-    white-space: nowrap; /* Hindari pemisahan baris di dalam galeri */
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .image-container {
-    display: inline-block; /* Memastikan galeri berbaris secara horizontal */
-    white-space: nowrap; /* Hindari pemisahan baris di dalam galeri */
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .image-wrapper {
-    display: inline-block; /* Membuat setiap gambar dan teks di dalam galeri berbaris secara horizontal */
-    vertical-align: top; /* Memastikan setiap gambar dan teks di dalam galeri berada di atas */
-    margin-right: 20px; /* Atur jarak antara setiap gambar dan teks */
-    text-align: center; /* Pusatkan teks di dalam galeri */
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    text-align: center;
 }
 
 .image-wrapper img {
-    max-width: 100%; /* Mengatur lebar maksimum gambar agar tidak melebihi lebar galeri */
-    height: auto; /* Biarkan tinggi gambar diatur secara otomatis untuk menjaga proporsi */
+    max-width: 100%;
+    height: auto;
 }
 
 .image-wrapper h5 {
-    font-size: 16px; /* Atur ukuran teks judul gambar */
-    margin-bottom: 5px; /* Atur jarak antara judul gambar dan teks tambahan */
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .image-wrapper p {
-    font-size: 14px; /* Atur ukuran teks tambahan */
-    color: #888; /* Warna teks tambahan */
+    font-size: 14px;
+    color: #888;
 }
 
 .navigation {
-    text-align: center; /* Pusatkan tombol navigasi */
-    margin-top: 20px; /* Atur margin atas */
+    text-align: center;
+    margin-top: 20px;
 }
 
 .navigation ul {
-    list-style: none; /* Hilangkan daftar bullet */
-    padding: 0; /* Hapus padding bawaan */
+    list-style: none;
+    padding: 0;
 }
 
 .navigation li {
-    display: inline-block; /* Tampilkan tombol dalam satu baris */
-    margin-right: 10px; /* Atur jarak antara tombol */
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .navigation button {
-    background-color: #007bff; /* Warna latar belakang */
-    color: white; /* Warna teks */
-    border: none; /* Hapus border */
-    padding: 8px 16px; /* Atur padding tombol */
-    font-size: 16px; /* Atur ukuran teks */
-    cursor: pointer; /* Ganti kursor saat dihover */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .navigation button:hover {
-    background-color: #0056b3; /* Warna latar belakang saat dihover */
+    background-color: #0056b3;
 }
 
 
