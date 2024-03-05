@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="assets/img/inumakisora.ico" type="image/x-icon">
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>🐾 Inumaki Sora 🐾</title>
 </head>
 <body>
@@ -41,56 +44,59 @@
             </section>
         </div>
         <!-- FanArt -->
-    
-        <section id="fanart" class="section">
-            <h1><span>Fan Art</span> Sora</h1>
-            <div class="img-scroll">
-                <div class="image-container">
-                    <div class="image-wrapper">
-                        <img src="assets/img/fanart/1.png" class="img1">
-                        <h5>Image 1</h5>
-                        <p>Art by Sora</p>
-                    </div>
-                    <div class="image-wrapper">
-                        <img src="assets/img/fanart/2.png" class="img2">
-                        <h5>Image 2</h5>
-                        <p>Art by Sora</p>
-                    </div>
-                    <div class="image-wrapper">
-                        <img src="assets/img/fanart/3.jpg" class="img3">
-                        <h5>Image 3</h5>
-                        <p>Art by Sora</p>
-                    </div>
-                    <div class="image-wrapper">
-                        <img src="assets/img/fanart/4.png" class="img4">
-                        <h5>Image 4</h5>
-                        <p>Art by Sora</p>
-                    </div>
-                    <div class="image-wrapper">
-                        <img src="assets/img/fanart/5.png" class="img5">
-                        <h5>Image 5</h5>
-                        <p>Art by Sora</p>
-                    </div>
-                    <div class="image-wrapper">
-                        <img src="assets/img/fanart/6.jpg" class="img6">
-                        <h5>Image 6</h5>
-                        <p>Art by Sora</p>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-        <nav class="navigation">
-            <ul>
-                <li><button id="prevBtn">Prev</button></li>
-                <li><button id="nextBtn">Next</button></li>
-            </ul>
-        </nav>
 
+        <div id="fanart">
+            <h1><span>FanArt </span>Sora</h1>
+            <div class="carousel">
+                <div class="carousel-images">
+                  <div class="carousel-item">
+                    <img src="assets/img/fanart/1.png" alt="Fan Art 1">
+                    <p class="image-caption">FanArt by Sora</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/fanart/2.png" alt="Fan Art 2">
+                    <p class="image-caption">FanArt by Sora</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/fanart/3.jpg" alt="Fan Art 3">
+                    <p class="image-caption">FanArt by Sora</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/fanart/4.png" alt="Fan Art 4">
+                    <p class="image-caption">FanArt by Sora</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/fanart/5.png" alt="Fan Art 5">
+                    <p class="image-caption">FanArt by Sora</p>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/fanart/6.jpg" alt="Fan Art 6">
+                    <p class="image-caption">FanArt by Sora</p>
+                  </div>
+                </div>
+                <button class="carousel-button prev" onclick="geserKiri();">Prev</button>
+                <button class="carousel-button next" onclick="geserKanan();">Next</button>
+              </div>
+        </div>
+        <br>
+
+
+        <!-- Perkenalan Sora -->
+
+        <div id="perkenalan">
+            <h1>Debut <span class="sora">Sora</span></h1>
+            <iframe
+            width="854" height="480" src="https://www.youtube.com/embed/mNuU26lK2z4"
+            title="Debut introduction Inumaki Sora"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+            </iframe>
+        </div>
+        
         <!-- About -->
     
         <section id="about" class="section">
-            <h1>About Sora</h1>
+            <h1>About <span class="sora">Sora</span></h1>
             <pre>
                 Inumaki Sora adalah seorang anak dari raja dan ratu dari kerajaan Doggo. Tapi dikarenakan terjadinya pemberontakan
                 Sora harus kabur menggunakan gerbang teleportasi, tapi karna terjadi suatu kesalahan Sora malah  teleport ke gerbang
@@ -109,4 +115,31 @@
     </footer>
 
 </body>
+
+
+<!-- Script FanArt By FandyFr -->
+<script>
+    let indexGambar = 0;
+
+    function geserKanan() {
+        const images = document.querySelector('.carousel-images');
+        const lebarGambar = images.clientWidth;
+        indexGambar++;
+        if (indexGambar >= images.children.length) {
+            indexGambar = 0; // Kembali ke gambar pertama jika sudah di akhir
+        }
+        images.style.transform = `translateX(-${indexGambar * lebarGambar}px)`;
+    }
+
+    function geserKiri() {
+        const images = document.querySelector('.carousel-images');
+        const lebarGambar = images.clientWidth;
+        indexGambar--;
+        if (indexGambar < 0) {
+            indexGambar = images.children.length - 1; // Pindah ke gambar terakhir jika di awal
+        }
+        images.style.transform = `translateX(-${indexGambar * lebarGambar}px)`;
+    }
+</script>
+
 </html>

@@ -37,36 +37,3 @@ document.getElementById('scrollToAbout').addEventListener('click', function(even
         behavior: 'smooth'
     });
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const imageContainer = document.querySelector('.image-container');
-
-    let scrollPosition = 0;
-    const scrollAmount = 200; // Jumlah scroll per klik (dapat disesuaikan)
-
-    // Event listener untuk tombol "Prev"
-    prevBtn.addEventListener('click', function() {
-        scrollPosition -= scrollAmount;
-        if (scrollPosition < 0) {
-            scrollPosition = 0;
-        }
-        imageContainer.scrollTo({
-            left: scrollPosition,
-            behavior: 'smooth'
-        });
-    });
-
-    // Event listener untuk tombol "Next"
-    nextBtn.addEventListener('click', function() {
-        scrollPosition += scrollAmount;
-        if (scrollPosition > imageContainer.scrollWidth - imageContainer.clientWidth) {
-            scrollPosition = imageContainer.scrollWidth - imageContainer.clientWidth;
-        }
-        imageContainer.scrollTo({
-            left: scrollPosition,
-            behavior: 'smooth'
-        });
-    });
-});

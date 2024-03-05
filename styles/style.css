@@ -12,6 +12,11 @@
     
 }
 
+.sora {
+    color: var(--sora);
+}
+
+
 * {
     text-decoration: none;
     list-style-type: none;
@@ -129,78 +134,62 @@ main {
 
 /* Fan Art */
 
-.section {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.section h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    position: relative;
     text-align: center;
-}
-
-.img-scroll {
-    overflow-x: auto;
-    white-space: nowrap;
-}
-
-.image-container {
-    display: inline-block;
-    white-space: nowrap;
-}
-
-.image-wrapper {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
-    text-align: center;
-}
-
-.image-wrapper img {
-    max-width: 100%;
+  }
+  
+  .carousel-item img {
+    max-width: 500px;
+    max-height: 5000px;
+    width: auto;
     height: auto;
-}
-
-.image-wrapper h5 {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.image-wrapper p {
-    font-size: 14px;
-    color: #888;
-}
-
-.navigation {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.navigation ul {
-    list-style: none;
-    padding: 0;
-}
-
-.navigation li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.navigation button {
-    background-color: #007bff;
-    color: white;
+    margin: auto;
+  }
+  
+  
+  .image-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
     border: none;
-    padding: 8px 16px;
-    font-size: 16px;
+    padding: 10px;
     cursor: pointer;
-}
-
-.navigation button:hover {
-    background-color: #0056b3;
-}
+    z-index: 100;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
 
 
 
@@ -212,6 +201,7 @@ section {
 }
 
 #fanart h1 {
+    padding: 80px;
     color: var(--sora);
 }
 
@@ -221,6 +211,14 @@ section {
 
 
 
+/* Perkenalan */
+
+#perkenalan {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
 
 
 /* Footer */
