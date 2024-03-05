@@ -235,6 +235,27 @@ section {
 }
 
 
+
+
+/* Mobile Web CSS */
+
+@media only screen and (max-width: 600) {
+    .navbar {
+        position: absolute;
+        display: block;
+    }
+
+    .nav-links li {
+        margin-left: 80px;
+    }
+}
+
+
+
+
+
+
+
 /* Animasi */
 
 @keyframes pulse512 {
